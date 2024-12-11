@@ -1,20 +1,12 @@
-﻿using AdventOfCode.Kit.Client.Models;
-using AdventOfCode.Kit.Console;
-using System.Runtime.CompilerServices;
+﻿using AdventOfCode.Kit.Console;
+using AdventOfCode.Puzzles;
 
 
 var console = AdventOfCodeConsole.Instance;
 
-
 console.StartYear(2024, year =>
 {
-    year.Submit<Day1>().ForDay(1);
+    year.Submit<HistorianHysteria>().ForDay(1);
 });
 
-class Day1 : Puzzle
-{
-    public override (Answer First, Answer Second) Run(string[] lines)
-    {
-        return (null, null);
-    }
-}
+console.Run(args);
